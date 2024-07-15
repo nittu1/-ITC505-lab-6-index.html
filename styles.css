@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    gap: 10px;
+}
+
+header {
+    grid-area: header;
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #2c3e50;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 15px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    grid-area: main;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+aside {
+    grid-area: aside;
+    background-color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#game-area {
+    text-align: center;
+}
+
+#scrambled-word {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #e74c3c;
+}
+
+#user-guess {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+}
+
+#submit-guess {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}

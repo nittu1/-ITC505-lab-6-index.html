@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Scramble Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>Word Scramble Challenge</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">High Scores</a></li>
+                <li><a href="#" class="nav-link">Rules</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="game-area">
+                <p>Unscramble this word:</p>
+                <h2 id="scrambled-word"></h2>
+                <input type="text" id="user-guess" placeholder="Your guess">
+                <button id="submit-guess">Submit</button>
+                <p id="message"></p>
+                <p>Score: <span id="score">0</span></p>
+            </div>
+        </main>
+        <aside>
+            <a href=https://www.amazon.com/Versace-Bright-Crystal-Toilette-Spray/dp/B00KXBUN62/ref=sr_1_4?crid=2HM7FN31VBFQ8&dib=eyJ2IjoiMSJ9.VYpjwkFsGQvFvGDYyvKc1GabccAoxfC44ZzdizeGdmy4qZxy3RQeq5t7xG7rLY1gHalDFbx4BDWFL6vj227_vHe7VbKuiJHtgPYBtz9CNjncLS3AcICod7e52frh_rmyppABpXc2KhYuEqQAgGLu8xgd7tVRQ3bL9kbWZWbHu7mayvB13aWL9z57YF19zB5Tf8iDEzoC2J4TlDoIxe-rf-E3DZzYeaGflbs--9w5elqe4dc3PiZEQO8JXncKIY2JHBx7mr2HktGhsSKdOI9ce5sgeO81yRsPWY5eVutrcXM.YBscvzo4c8M8_QvOHjLRuijG5PGTo1FIhhxI_Cp0tnU&dib_tag=se&keywords=PErfumes&qid=1721069490&sprefix=perfumes%2Caps%2C159&sr=8-4" target="_blank">
+                <img src="https://m.media-amazon.com/images/I/41+95bYrRcL._SY300_SX300_.jpg" alt="Word Puzzle Book" width="150">
+            </a>
+        </aside>
+        <footer>
+            <h3>Addendum</h3>
+            <p>This page implements a Word Scramble game using JavaScript. The game presents scrambled words to the user, who must guess the original word. Challenges included creating a word scrambling algorithm and managing game state.</p>
+            <p>Last updated: <span id="lastModified"></span></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
